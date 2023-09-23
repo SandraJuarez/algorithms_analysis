@@ -14,7 +14,7 @@ void randomizeIndices(int *indices, int n) {
 
     // Randomly exchange elements of the array
     for (int i = n - 1; i > 0; i--) {
-        int j = rand() % (i + 1);  // we generate a random number between 1 and the lenght of original array
+        int j = rand() % (n-1);  // we generate a random number between 1 and the lenght of original array
         int temp = indices[i];
         indices[i] = indices[j]; // and we swap the original with the random j index 
         indices[j] = temp;
